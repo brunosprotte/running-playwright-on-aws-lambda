@@ -2,7 +2,7 @@ module.exports = {
   name: 'play-e2e',
   displayName: 'e2e-play',
   globals: {
-    BASE_URL: 'https://front.serverest.dev'
+    BASE_URL: 'https://poker-theta.vercel.app'
   },
   preset: "jest-playwright-preset",
   globalSetup: 'jest-playwright-preset/setup',
