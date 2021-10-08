@@ -27,7 +27,7 @@ describe('Login', () => {
       
       await Promise.all([
         page.click('#join-joinButton'),
-        page.waitForURL(/.*teste/, { timeout:10000, waitUntil: "domcontentloaded" })  
+        page.waitForURL(/.*teste/, { timeout:30000, waitUntil: "domcontentloaded" })  
       ]);
       
       expect(page.url()).toContain('/teste')
