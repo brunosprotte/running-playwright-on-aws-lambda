@@ -42,7 +42,7 @@ async function runPlaywrightTestOnServerless() {
       loggers.logComplete({
         numTotalTests,numTotalFiles, startTestTime, totalTimeExecution
       })
-      if (numFailedTests > 0) {
+      if (Number(numFailedTests) > 0) {
         process.exit(1)  
       }
       process.exit(0)
